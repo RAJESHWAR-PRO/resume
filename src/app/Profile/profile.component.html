@@ -1,0 +1,24 @@
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <header class="sticky1" id="navbar" onload="myFunction()">
+        <div class="topnav" id="myTopnav">
+            <a class="active" (click)="scrollWelcome()"> Rajeshwar </a>
+            <a (click)="scrollAbout()">About</a>
+            <a (click)="scrollEducation()">Education</a>
+            <a (click)="scrollExperience()">Experience</a>
+            <a (click)="scrollContact()">Contact</a>
+            <a href="javascript:void(0);" class="icon" (click)="myFunction()">
+            <i class="fa fa-bars"></i>
+            </a>
+        </div>
+    </header>
+<div id="loader"></div>
+<section class="web_homePage" (scroll)="onWindowScroll($event);"> 
+    <!-- rest of the html code goes here -->
+</section>
+
+<app-welcome id="welcomeSection"></app-welcome>
+<app-about id="aboutSection" ></app-about>
+<app-education id="educationSection" ></app-education>
+<app-experience id="experienceSection" ></app-experience>
+<app-contact id="contactSection" ></app-contact>

@@ -1,0 +1,39 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import '~bootstrap/dist/css/bootstrap.min.css';
+
+html{
+    scroll-behavior: smooth;
+}
+body{
+    scroll-behavior: smooth;
+    background-color: #929D9E;
+    color: white;
+}
+.btn{
+    color:white;
+}
+.btn:hover{
+    background-color: #859293;
+}
+.btn:active{
+    background-color: #859293;
+}
+pre{
+    color:greenyellow;
+}
+table{
+    color:white;
+}
+.divider{
+    color: greenyellow;
+}
+li{
+    color: white;
+}
+button{
+    background-color: #8da242;
+}
+td{
+    color:white;
+}

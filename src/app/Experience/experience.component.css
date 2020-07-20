@@ -1,0 +1,69 @@
+.mytextdiv{
+  display:flex;
+  flex-direction:row;
+  align-items: center;
+}
+
+.mytexttitle{
+  flex-grow:0;
+}
+  
+.divider{
+  flex-grow:1;
+  height: 2px;
+  background-color: greenyellow;
+}
+
+.btn-style{
+  border: none;
+  width: 100%;
+  text-align: left;
+  box-shadow: none;
+  border-radius: 0;
+}
+.btn-style-adv{
+  border-left: 2px solid greenyellow;
+  background-color:  #859293;;
+}
+.selectMenu{
+  display: none;
+}
+@media screen and (max-width: 600px) {
+  .btn-style{
+    display: none;
+  }
+  .selectMenu {
+    /* float: center; */
+    display: block;
+  }
+}
+div {
+  -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+     -moz-animation: fadein 2s; /* Firefox < 16 */
+      -ms-animation: fadein 2s; /* Internet Explorer */
+       -o-animation: fadein 2s; /* Opera < 12.1 */
+          animation: fadein 2s;
+}
+
+@keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}

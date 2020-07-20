@@ -1,0 +1,57 @@
+.mytextdiv{
+    display:flex;
+    flex-direction:row;
+     align-items: center;
+  }
+.mytexttitle{
+    flex-grow:0;
+  }
+  
+.divider{
+    flex-grow:1;
+    height: 2px;
+    background-color: greenyellow;
+  }
+.imageFilter{
+  width: 100%;
+  height: auto;
+  border-radius: 1%;
+  /* filter: grayscale(100%); */
+  position: relative;
+  /* transition: all 1s; */
+  z-index: -1;
+}
+.imageFilter:hover{
+  filter: grayscale(0%);
+}
+div img {
+  
+  -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+     -moz-animation: fadein 2s; /* Firefox < 16 */
+      -ms-animation: fadein 2s; /* Internet Explorer */
+       -o-animation: fadein 2s; /* Opera < 12.1 */
+          animation: fadein 2s;
+}
+
+@keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}

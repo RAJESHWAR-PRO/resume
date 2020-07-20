@@ -1,0 +1,87 @@
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<div class="container" style="margin-top: 10%;margin-bottom: 5%;">
+    <div class="row">
+        <div class="col-xl-12 mytextdiv" style="margin-top: 50px;">
+              <pre class="mytexttitle" style="font-size: 20px;margin: 0 0 0 0;padding: 0 0 0 0;font-size: 25px; font-weight: bold;">Education   </pre>
+            <div class="divider"></div>
+        </div>
+    </div>
+    <div class="row"  style="margin-top: 5%;">
+        <div class="col-xl-1"></div>
+        <div class="col-xl-4">
+            <button class="btn btn-style btn-outline-primary btn-style-adv" id="menu1" (click)="enggCollege()">Vardhaman College of Engineering</button>
+            <button class="btn btn-style btn-outline-primary" id="menu2" (click)="interCollege()">Narayana Jr. College</button>
+            <button class="btn btn-style btn-outline-primary" id="menu3" (click)="school()">Pioneer Concept School</button>
+            <div class="form-group selectMenu" style="box-shadow: none;">
+                <label for="exampleFormControlSelect1">Education Qualification</label>
+                <select class="form-control" id="exampleFormControlSelect1" [(ngModel)]="selectedOption" (click)="selectMenu()" style="box-shadow: none;">
+                  <option (click)="enggCollege()" [selected]>Vardhaman College of Engineering</option>
+                  <option (click)="interCollege()">Narayana Jr. College</option>
+                  <option (click)="school()">Pioneer Concept School</option>
+                </select>
+              </div><br>
+        </div>
+        <!-- <div class="col-xl-1"><pre>    </pre></div> -->
+        <div class="col-xl-7" *ngIf="enggCollegeStatus">
+            <h3>Vardhaman College of Engineering</h3>  
+            <p>2015-2019</p>
+            <p>Hyderabad, Telangana - India</p>
+            <p>University - Jawaharlal Nehru Technological University, Hyderabad</p>
+            <p>Degree -  Bachelor of Technology</p>
+            <p>Branch - Computer Science and Engineering</p>
+            <p>Aggregate - 7.5 CGPA</p>
+            <!-- <table class="table">
+                <tr>
+                    <td>University</td>
+                    <td>- </td><td> Jawaharlal Nehru Technological University, Hyderabad</td>
+                </tr>
+                <tr>
+                    <td>Degree</td>
+                    <td>-</td><td> Bachelor of Technology</td>
+                </tr>
+                <tr>
+                    <td>Branch</td>
+                    <td>-</td><td> Computer Science and Engineering</td>
+                </tr>
+                <tr>
+                    <td>Aggregate</td>
+                    <td>-</td><td> 7.5 CGPA</td>
+                </tr>
+            </table> -->
+        </div>
+        <div class="col-xl-7" *ngIf="interCollegeStatus">
+            <h3>Narayana Jr. College</h3>  
+            <p>2013-2015</p>
+            <p>Hyderabad, Telangana - India</p>
+            <table class="table">
+                <tr>
+                    <td>Board</td>
+                    <td>- TSBIE</td>
+                </tr>
+                <tr>
+                    <td>Branch</td>
+                    <td>- Mathematics, Physics & Chemistry</td>
+                </tr>
+                <tr>
+                    <td>Percentage</td>
+                    <td>- 81.6</td>
+                </tr>
+            </table>
+        </div>
+        <div class="col-xl-7" *ngIf="schoolStatus">
+            <h3>Pioneer Concept School</h3>  
+            <p>2013</p>
+            <p>Hyderabad, Telangana - India</p>
+            <table class="table">
+                <tr>
+                    <td>Board</td>
+                    <td>- State Board(SSC)</td>
+                </tr>
+                <tr>
+                    <td>GPA</td>
+                    <td>- 8.3</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>

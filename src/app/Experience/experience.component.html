@@ -1,0 +1,38 @@
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<div class="container" style="margin-top: 13%;">
+    <div class="row">
+        <div class="col-xl-12 mytextdiv" style="margin-top: 50px;">
+              <pre class="mytexttitle" style="font-size: 20px;margin: 0 0 0 0;padding: 0 0 0 0;font-size: 25px; font-weight: bold;">Experience   </pre>
+            <div class="divider"></div>
+        </div>
+    </div>
+    <div class="row"  style="margin-top: 5%;">
+        <div class="col-xl-1"></div>
+        <div class="col-xl-4">
+            <button class="btn btn-style btn-outline-primary btn-style-adv" id="menu" (click)="cognizant()">Cognizant</button>
+            <div class="form-group selectMenu" style="box-shadow: none;">
+                <label for="exampleFormControlSelect1">Experience</label>
+                <select class="form-control" id="exampleFormControlSelect1" style="box-shadow: none;">
+                  <option (click)="cognizant()">Cognizant</option>
+                </select>
+              </div><br>
+        </div>
+        <!-- <div class="col-xl-1"><pre>    </pre></div> -->
+        <div class="col-xl-7" *ngIf="cognizantStatus">
+            <h3>Cognizant</h3>  
+            <p>July,2019 - present</p>
+            <p>Chennai, TamilNadu - India</p>
+            <table class="table">
+                <tr>
+                    <td><li>Working on a Java based client project</li></td>
+                </tr>
+                <tr>
+                    <td><li> I'm trained in Full Stack domain securing 80% marks in hands-on project developed during training</li></td>
+                </tr>
+                <tr>
+                    <td><li>Till now, I have worked on Java, SpringBoot, Maven, Angular, Git and MySQL</li></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>
