@@ -1,0 +1,14 @@
+.mytextdiv{
+  display:flex;
+  flex-direction:row;
+   align-items: center;
+}
+.mytexttitle{
+  flex-grow:0;
+}
+
+.divider{
+  flex-grow:1;
+  height: 2px;
+  background-color: greenyellow;
+}

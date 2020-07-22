@@ -59,7 +59,7 @@ export class ProfileComponent implements OnInit {
   }
   scrollEducation(): void{
     var scrollToElement = document.getElementById('educationSection');
-    scrollToElement.scrollIntoView({behavior:"smooth"});
+    scrollToElement.scrollIntoView({behavior:"smooth",block:"center"});
     this.myFunction();
   }
   scrollExperience(): void{
