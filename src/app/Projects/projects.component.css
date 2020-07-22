@@ -12,3 +12,17 @@
   height: 2px;
   background-color: greenyellow;
 }
+.col-xl-5{
+  margin-right: 10px;
+  border-radius: 5px;
+  word-wrap: break-word;
+  text-align: justify;
+}
+.col-xl-5:hover{
+  border-left: 2px solid greenyellow;
+  background-color:  #859293;;
+}
+.btn-style-adv{
+  border-left: 2px solid greenyellow;
+  background-color:  #859293;;
+}
