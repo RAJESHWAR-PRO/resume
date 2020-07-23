@@ -176,6 +176,9 @@ h1 {
   #experienceSection{
     display: none;
   }
+  #projectsSection{
+    display: none;
+  }
   #contactSection{
     display: none;
   }

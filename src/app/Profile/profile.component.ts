@@ -26,6 +26,7 @@ export class ProfileComponent implements OnInit {
       document.getElementById("aboutSection").style.display = "block";
       document.getElementById("educationSection").style.display = "block";
       document.getElementById("experienceSection").style.display = "block";
+      document.getElementById("projectsSection").style.display = "block";
       document.getElementById("contactSection").style.display = "block";
     }
    }
@@ -54,7 +55,7 @@ export class ProfileComponent implements OnInit {
   }
   scrollAbout(): void{
     var scrollToElement = document.getElementById('aboutSection');
-    scrollToElement.scrollIntoView({behavior:"smooth"});
+    scrollToElement.scrollIntoView({behavior:"smooth",block:"center"});
     this.myFunction();
   }
   scrollEducation(): void{
