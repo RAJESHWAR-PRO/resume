@@ -1,6 +1,5 @@
-import { Component, OnInit, HostListener, Inject } from '@angular/core';  
-import { trigger, state, transition, style, animate } from '@angular/animations';  
-import { DOCUMENT } from '@angular/common';
+import { Component, OnInit } from '@angular/core';  
+
 @Component({
   selector: 'app-education',
   templateUrl: './education.component.html',
