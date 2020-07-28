@@ -29,6 +29,7 @@ export class ProfileComponent implements OnInit {
       document.getElementById("projectsSection").style.display = "block";
       document.getElementById("contactSection").style.display = "block";
     }
+    console.log = function() {}
    }
 
   @HostListener('window:scroll', ['$event'])

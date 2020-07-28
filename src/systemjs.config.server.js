@@ -7,7 +7,7 @@
 (function (global) {
     System.config({
     paths: {
-    'npm:': 'https://wannaseeme.com/' // path serves as alias
+    'npm:': 'https://unpkg.com/' // path serves as alias
     },
     
     // map tells the System loader where to look for things
