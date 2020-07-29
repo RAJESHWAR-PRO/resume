@@ -1,6 +1,7 @@
 import { Component, OnInit, HostListener, Inject } from '@angular/core';  
 import { trigger, state, transition, style, animate } from '@angular/animations';  
 import { DOCUMENT } from '@angular/common';
+import { element } from 'protractor';
 @Component({
   selector: 'app-profile',
   templateUrl: './profile.component.html',
@@ -15,7 +16,8 @@ import { DOCUMENT } from '@angular/common';
 )]
 })
 export class ProfileComponent implements OnInit {
-  constructor(@Inject(DOCUMENT) document) { }
+  constructor(@Inject(DOCUMENT) document) {
+   }
 
   ngOnInit() { 
     setTimeout(showPage, 3000);
