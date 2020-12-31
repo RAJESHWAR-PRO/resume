@@ -22,7 +22,7 @@ export class ProfileComponent implements OnInit {
   ngOnInit() { 
     setTimeout(showPage, 3000);
     function showPage() {
-      document.getElementById("loader").style.display = "none";
+      document.getElementById("spinLoader").style.display = "none";
       document.getElementById("navbar").style.display = "block";
       document.getElementById("welcomeSection").style.display = "block";
       document.getElementById("aboutSection").style.display = "block";
@@ -55,6 +55,7 @@ export class ProfileComponent implements OnInit {
   scrollWelcome(): void{
     var scrollToElement = document.getElementById('welcomeSection');
     scrollToElement.scrollIntoView({behavior:"smooth",block:"center"});
+    this.myFunction();
   }
   scrollAbout(): void{
     var scrollToElement = document.getElementById('aboutSection');
